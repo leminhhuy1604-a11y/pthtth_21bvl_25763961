@@ -1,0 +1,4 @@
+BÁO CÁO TỒN KHO
+Số sản phẩm: 2
+Tổng giá trị tồn kho: 3,040,000 VND
+Sản phẩm có giá trị tồn kho cao nhất: 7 - huy | Đơn giá: 1,000,000 | SL: 3 | Giá trị tồn kho: 3,000,000 VND
