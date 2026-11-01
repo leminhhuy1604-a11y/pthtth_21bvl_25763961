@@ -2,10 +2,7 @@ package bai2;
 
 import java.time.Year;
 
-/**
- * Lớp cha Nguoi - làm lớp cơ sở cho SinhVien và GiangVien.
- * Chứa các thông tin và hành vi chung của một con người trong trường đại học.
- */
+
 public class Nguoi {
     // 1. Các thuộc tính private (tính đóng gói)
     private String hoTen;

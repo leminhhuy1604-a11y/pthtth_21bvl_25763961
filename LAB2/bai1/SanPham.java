@@ -1,11 +1,6 @@
 package bai1;
 
-/**
- * Lớp SanPham thể hiện tính đóng gói (Encapsulation) trong OOP.
- * - Các thuộc tính được khai báo private để bảo vệ dữ liệu.
- * - Truy xuất và chỉnh sửa dữ liệu thông qua Getter/Setter và phương thức nghiệp vụ.
- * - Kiểm soát chặt chẽ tính hợp lệ của dữ liệu trước khi thay đổi trạng thái đối tượng.
- */
+
 public class SanPham {
     // 1. Các thuộc tính private
     private String maSanPham;
@@ -73,18 +68,12 @@ public class SanPham {
     }
 
     // 3. Các phương thức nghiệp vụ
-    /**
-     * Tính thành tiền = đơn giá * số lượng
-     */
+    
     public double tinhThanhTien() {
         return donGia * soLuong;
     }
 
-    /**
-     * Nhập thêm hàng vào kho:
-     * - Số lượng nhập phải lớn hơn 0
-     * - Cộng số lượng nhập vào tồn kho
-     */
+   
     public void nhapHang(int soLuongNhap) {
         if (soLuongNhap > 0) {
             this.soLuong += soLuongNhap;
@@ -94,13 +83,7 @@ public class SanPham {
         }
     }
 
-    /**
-     * Bán hàng:
-     * - Số lượng bán phải lớn hơn 0.
-     * - Không được bán quá số lượng tồn kho.
-     * - Nếu bán thành công: cập nhật số lượng và trả về true.
-     * - Nếu không đủ hàng: giữ nguyên số lượng và trả về false.
-     */
+   
     public boolean banHang(int soLuongBan) {
         if (soLuongBan <= 0) {
             System.out.println("-> [Thất bại] Số lượng bán phải lớn hơn 0! (Yêu cầu bán: " + soLuongBan + ")");
@@ -116,9 +99,7 @@ public class SanPham {
         return true;
     }
 
-    /**
-     * Hiển thị thông tin sản phẩm: mã, tên, đơn giá, số lượng và thành tiền.
-     */
+    
     public void hienThiThongTin() {
         System.out.printf("| %-8s | %-24s | %,14.0f VNĐ | %8d | %,16.0f VNĐ |%n",
                 maSanPham, tenSanPham, donGia, soLuong, tinhThanhTien());

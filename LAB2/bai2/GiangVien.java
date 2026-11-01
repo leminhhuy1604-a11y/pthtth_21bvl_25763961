@@ -1,12 +1,6 @@
 package bai2;
 
-/**
- * Lớp GiangVien kế thừa từ lớp Nguoi.
- * Thể hiện tính kế thừa (Inheritance):
- * - Kế thừa các thuộc tính và phương thức từ lớp cha Nguoi.
- * - Sử dụng super để tái sử dụng mã nguồn.
- * - Ghi đè hienThiThongTin() và bổ sung phương thức tínhLuong().
- */
+
 public class GiangVien extends Nguoi {
     // Thuộc tính bổ sung của GiangVien
     private String maGiangVien;
@@ -74,19 +68,12 @@ public class GiangVien extends Nguoi {
         }
     }
 
-    /**
-     * Phương thức tính lương:
-     * Công thức: Lương = Lương cơ bản * Hệ số lương
-     */
+   
     public double tinhLuong() {
         return luongCoBan * heSoLuong;
     }
 
-    /**
-     * Ghi đè phương thức hienThiThongTin():
-     * - Gọi super.hienThiThongTin() để hiển thị thông tin chung.
-     * - Hiển thị bổ sung thông tin riêng của giảng viên (mã, chuyên môn, lương cơ bản, hệ số, tổng lương).
-     */
+   
     @Override
     public void hienThiThongTin() {
         super.hienThiThongTin();

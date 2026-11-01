@@ -1,12 +1,6 @@
 package bai2;
 
-/**
- * Lớp SinhVien kế thừa từ lớp Nguoi.
- * Thể hiện tính kế thừa (Inheritance):
- * - Kế thừa các thuộc tính và phương thức từ lớp cha Nguoi.
- * - Sử dụng từ khóa 'super' để gọi constructor và phương thức của lớp cha.
- * - Ghi đè phương thức hienThiThongTin() và bổ sung các phương thức nghiệp vụ riêng.
- */
+
 public class SinhVien extends Nguoi {
     // Thuộc tính bổ sung của SinhVien
     private String maSinhVien;
